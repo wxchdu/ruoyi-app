@@ -1,0 +1,24 @@
+<view class="page">
+	<scroll-view scroll-y="true" refresher-enabled="true" bindrefresherrefresh="onRefresh" refresher-triggered="{{triggered}}" bindscrolltolower="onBot">
+		<view class="ux-wraper"></view>
+	</scroll-view>
+</view>
+
+<script type="module">
+import utils from "{rale}lib/utils.js";
+export default {
+	data() {
+		return {
+			entity:{},
+			list:[],
+			vm:{}
+		}
+	},
+	onLoad:function(options){
+		utils._init(this,options);
+	},
+	methods: {
+		
+	}
+}
+</script>
