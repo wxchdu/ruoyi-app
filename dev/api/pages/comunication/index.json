@@ -1,0 +1,22 @@
+{
+    "functions":{
+        "onExecute":{
+            "name":"onExecute",
+            "params":[
+                {
+                    "name":"options"
+                }
+            ],
+            "manual":false
+        },
+        "onInitialize":{
+            "name":"onInitialize",
+            "params":[
+                {
+                    "name":"options"
+                }
+            ],
+            "manual":true
+        }
+    }
+}
