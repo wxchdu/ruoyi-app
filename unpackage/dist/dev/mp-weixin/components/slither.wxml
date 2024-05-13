@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['clickEvent',['$event']]]],['touchstart',[['onTouchStart',['$event']]]],['touchmove',[['onTouchMove',['$event']]]],['touchend',[['onTouchEnd',['$event']]]]]}}" class="slither" style="{{'transform:'+('translateX(-'+moveX+'px)')+';'}}" bindtap="__e" bindtouchstart="__e" bindtouchmove="__e" bindtouchend="__e"><slot></slot></view>

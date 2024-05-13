@@ -88,7 +88,7 @@ export default{
 		}
 	},
 	mounted:function(){
-		utils._init(this,{});
+		utils._init(this,{},true);
 		this.innerValue=this.value;
 		if(this.innerValue){
 			this.date = getDate(null,"date",this.ptype=="datetime"?this.innerValue:null);

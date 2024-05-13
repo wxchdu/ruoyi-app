@@ -37,7 +37,7 @@ export default{
 		},
 	},
 	created:function(options){
-		utils._init(this,{});
+		utils._init(this,{},true);
 		this.onInitValue(this.value);
 	},
 	methods:{

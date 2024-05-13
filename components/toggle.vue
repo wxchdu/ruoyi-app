@@ -42,7 +42,7 @@ export default{
 		},
 	},
 	created:function(){
-		utils._init(this,{});
+		utils._init(this,{},true);
 		this.onInitValue(this.value);
 	},
 	methods:{

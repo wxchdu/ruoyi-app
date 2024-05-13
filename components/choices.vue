@@ -167,7 +167,7 @@ export default{
 		},
 	},
 	created:function(){
-		utils._init(this,{});
+		utils._init(this,{},true);
 		if(this.action){
 			this.getList();
 		}else{

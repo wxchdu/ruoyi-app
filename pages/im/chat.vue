@@ -1,75 +1,132 @@
 <template>
 	<view class="page">
-		<view :style="" style="width:100%;height:25px;background-color:#ffffff;" class="em"></view>
-		<view class="ux-flex" style="height:52px;">
-			<view style="width:80px;min-height:100%;" class="e c">
-				<icon class="iconfont icon-fanhui1" style="font-size:18px;" type=""></icon>
+		<view :style="" style="width:100%;height:25px;background-color:#f2f3f5;" class="em"></view>
+		<view title="header" class="ux-flex" style="background-color:#f2f3f5;">
+			<view style="width:80px;min-height:100%;height:50px;" class="row">
+				<navigator class="col-6 e c" style="height:100%;" url="#" open-type="navigateBack">
+					<icon class="iconfont icon-fanhui1" style="font-size:20px;" type=""></icon>
+				</navigator>
+				<view class="col-6 e l" style="height:100%;">
+					<view style="background-color:#e0e1e3;border-radius:15px;width:24px;height:20px;" class="e c">
+						<text>11</text>
+					</view>
+				</view>
 			</view>
-			<view class="fixe e l" style="flex:1;min-height:100%;font-weight:bold;">新微数字</view>
+			<view class="fixe e c" style="flex:1;min-height:100%;">
+				<text style="position:absolute;width:178px;height:24px;left:18.5px;top:13px;z-index:1;font-size:16px;">工作通知:新微数字二...</text>
+			</view>
 			<view style="width:80px;min-height:100%;" class="row">
 				<view class="col-6 e c" style="height:100%;">
-					<icon class="iconfont icon-record" style="font-size:28px;" type=""></icon>
+					<icon class="iconfont icon-flashlightopen" style="font-size:25px;" type=""></icon>
 				</view>
 				<view class="col-6 e c" style="height:100%;">
-					<icon class="iconfont icon-more" style="font-size:28px;" type=""></icon>
+					<icon class="iconfont icon-more" style="font-size:30px;" type=""></icon>
 				</view>
 			</view>
 		</view>
-		<scroll-view scroll-y="true" refresher-enabled="true" :refresher-triggered="triggered" style="height:667px;" @refresherrefresh="onRefresh" @scrolltolower="onBot">
-			<view class="ux-wraper" style="background-color:#f7f7f7;height:629px;"></view>
-		</scroll-view>
-		<view class="row" style="width:100%;height:35px;background-color:#eeeeee;">
-			<view class="col-10" style="height:30px;">
-				<scroll-view scroll-x="true" style="height:35px;overflow-y:hidden;overflow-x: overlay;">
-					<view class="ux-nowarp" style="height:30px;">
-						<view style="width:101px;min-height:100%;border-radius:5px;background-color:#ffffff;height:30px;margin-left:3px;margin-right:3px;" class="row" wx:for="7">
-							<view class="col-5">
-								<svgw style="font-size:24px;">
-									<svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2699">
-										<path d="M916.0192 508.672L760.9856 401.408a64.83456 64.83456 0 0 1-27.9552-53.504l0.4608-188.5696c0.1536-53.76-61.44-84.3264-104.192-51.712L479.3344 221.952A64.76288 64.76288 0 0 1 419.84 231.9872L240.64 173.312c-51.0976-16.7424-99.1744 32.3584-81.408 83.0976l62.4128 177.92c7.0656 20.1216 3.7376 42.4448-8.8064 59.6992l-111.2064 152.2688c-31.6928 43.4176 0.1536 104.2944 53.8624 103.0656l188.5184-4.352c21.3504-0.512 41.5744 9.5232 54.0672 26.8288l110.4384 152.832c31.488 43.5712 99.2768 32.1024 114.688-19.3536l51.9168-173.2608 173.2096 161.8944a38.10816 38.10816 0 0 0 24.32 10.24c10.8032 0.512 21.76-3.584 29.696-12.0832a38.15424 38.15424 0 0 0-1.8432-54.016l-170.9056-159.744 169.4208-54.5792c51.1488-16.4864 61.2352-84.48 16.9984-115.0976zM382.6688 499.8144l-58.624 106.496a38.2208 38.2208 0 0 1-33.536 19.8144c-6.2464 0-12.544-1.536-18.3808-4.7616-18.4832-10.1888-25.2416-33.4336-15.0528-51.9168l54.784-99.5328-26.0608-87.1424c-6.0416-20.224 5.4272-41.5232 25.6512-47.5648 20.224-6.0416 41.5232 5.4272 47.5648 25.6512l28.3136 94.72c4.4544 14.6432 2.7648 30.7712-4.6592 44.2368z" fill="#BD50D3" p-id="2700"></path>
-										<path d="M788.1216 420.1984l-27.136-18.7904a64.83456 64.83456 0 0 1-27.9552-53.504l0.4608-188.5696c0.1536-53.76-61.44-84.3264-104.192-51.712L479.3344 221.952A64.73728 64.73728 0 0 1 419.84 231.9872L240.64 173.312c-51.0976-16.7424-99.1744 32.3584-81.408 83.0976l62.4128 177.92c7.0656 20.1216 3.7376 42.4448-8.8064 59.6992l-111.2064 152.2688c-31.6928 43.4176 0.1536 104.2944 53.8624 103.0656l188.5184-4.352c21.3504-0.512 41.5744 9.5232 54.0672 26.8288l47.4112 65.6384c178.0736-66.6112 311.3472-224.8192 342.6304-417.28zM382.6688 499.8144l-58.624 106.496a38.2208 38.2208 0 0 1-33.536 19.8144c-6.2464 0-12.544-1.536-18.3808-4.7616-18.4832-10.1888-25.2416-33.4336-15.0528-51.9168l54.784-99.5328-26.0608-87.1424c-6.0416-20.224 5.4272-41.5232 25.6512-47.5648 20.224-6.0416 41.5232 5.4272 47.5648 25.6512l28.3136 94.72c4.4544 14.6432 2.7648 30.7712-4.6592 44.2368z" fill="#C65EDB" p-id="2701"></path>
-										<path d="M101.632 646.2976c-7.68 10.5472-11.5712 22.0672-12.3904 33.536 6.7584 0.256 13.5168 0.512 20.3264 0.512 297.3184 0 538.368-241.0496 538.368-538.368 0-14.6944-0.768-29.2352-1.8944-43.6736-5.7856 2.2016-11.3664 5.2736-16.7424 9.3184L479.3344 221.952A64.73728 64.73728 0 0 1 419.84 231.9872L240.64 173.312c-51.0976-16.7424-99.1744 32.3584-81.408 83.0976l62.4128 177.92c7.0656 20.1216 3.7376 42.4448-8.8064 59.6992l-111.2064 152.2688z m155.4944-76.8512l54.784-99.5328-26.0608-87.1424c-6.0416-20.224 5.4272-41.5232 25.6512-47.5648 20.224-6.0416 41.5232 5.4272 47.5648 25.6512l28.3136 94.72c4.4032 14.6944 2.6624 30.8224-4.7104 44.2368l-58.624 106.496a38.2208 38.2208 0 0 1-33.536 19.8144c-6.2464 0-12.544-1.536-18.3808-4.7616a38.21056 38.21056 0 0 1-15.0016-51.9168z" fill="#CA6EE0" p-id="2702"></path>
-										<path d="M419.84 231.9872L240.64 173.312c-51.0976-16.7424-99.1744 32.3584-81.408 83.0976l60.9792 173.8752c23.552-12.1344 46.08-25.9584 67.4816-41.2672l-1.8432-6.2464c-6.0416-20.224 5.4272-41.5232 25.6512-47.5648 12.032-3.584 24.4736-0.9216 33.8432 6.0416 33.1776-31.6416 62.4128-67.3792 86.6816-106.5984-4.096-0.5632-8.192-1.3312-12.1856-2.6624z" fill="#D786EA" p-id="2703"></path>
-									</svg>
-								</svgw>
-							</view>
-							<view class="col-7" style="width:63px;">消息总结</view>
+		<scroll-view scroll-y="true" refresher-enabled="true" :refresher-triggered="triggered" @refresherrefresh="onRefresh" @scrolltolower="onBot">
+			<view class="ux-wraper" style="background-color:#f2f3f5;padding-top:10px;" @click="showPanel">
+				<view class="ux-flex t" style="padding:10px 0px;" v-for="item in list">
+					<view style="width:80px;min-height:100%;" class="c t">
+						<view style="width:44px;height:44px;border-radius:90px;background-color:#1890ff;color:#ffffff;margin-top:-10px;" v-if="item.uid!=me.uid" class="e c">
+							<img style="width:100%;height:100%;border-radius:90px;" mode="scaleToFill" :src="item.header"></img>
 						</view>
 					</view>
-				</scroll-view>
-			</view>
-			<view class="col-2 row e" style="height:30px;background-color:#ffffff;border-radius:5px;margin-left:3px;width:59px;">
-				<view class="col-5">
-					<svgw style="font-size:22px;">
-						<svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4463">
-							<path d="M299.5712 117.3504c101.9392 0 184.5248 82.6368 184.5248 184.5248v107.008c0 42.8032-34.7136 77.568-77.568 77.568H299.52c-101.9392 0-184.5248-82.6368-184.5248-184.5248 0.0512-101.9904 82.6368-184.576 184.576-184.576z" fill="#8486F8" p-id="4464"></path>
-							<path d="M299.5712 917.4528c101.9392 0 184.5248-82.6368 184.5248-184.5248v-107.008c0-42.8032-34.7136-77.568-77.568-77.568H299.52c-101.9392 0-184.5248 82.6368-184.5248 184.5248 0.0512 101.9392 82.6368 184.576 184.576 184.576zM726.2208 117.3504c-101.9392 0-184.5248 82.6368-184.5248 184.5248v107.008c0 42.8032 34.7136 77.568 77.568 77.568h107.008c101.9392 0 184.5248-82.6368 184.5248-184.5248-0.0512-101.9904-82.688-184.576-184.576-184.576zM726.2208 917.4528c-101.9392 0-184.5248-82.6368-184.5248-184.5248v-107.008c0-42.8032 34.7136-77.568 77.568-77.568h107.008c101.9392 0 184.5248 82.6368 184.5248 184.5248-0.0512 101.9392-82.688 184.576-184.576 184.576z" fill="#6C6CEA" p-id="4465"></path>
-							<path d="M446.5152 548.352h-146.944c-101.9392 0-184.5248 82.6368-184.5248 184.5248 0 64.7168 33.3824 121.6512 83.8144 154.5728 14.848 1.0752 29.8496 1.6384 45.0048 1.6384 66.304 0 130.2016-10.496 190.1056-29.7984 31.0784-33.024 50.176-77.5168 50.176-126.464v-146.8928c0-20.736-16.896-37.5808-37.632-37.5808zM854.5792 169.3696c-33.2288-32.2048-78.4896-52.0192-128.3584-52.0192-101.9392 0-184.5248 82.6368-184.5248 184.5248v146.8928a37.632 37.632 0 0 0 37.632 37.632h146.8928c41.216 0 79.2576-13.5168 109.9776-36.352a619.4688 619.4688 0 0 0 26.5728-179.9168c0.0512-34.304-2.816-67.9424-8.192-100.7616zM790.8352 560.0256a184.02816 184.02816 0 0 0-64.6144-11.6736h-146.8928a37.632 37.632 0 0 0-37.632 37.632v146.8928c0 25.4464 5.1712 49.664 14.4896 71.7312a622.03904 622.03904 0 0 0 234.6496-244.5824z" fill="#757BF2" p-id="4466"></path>
-							<path d="M442.112 548.352H299.5712c-78.6944 0-145.8688 49.3056-172.3904 118.6816 117.3504-9.8816 225.3824-52.48 314.9312-118.6816zM541.6448 301.8752v146.8928c0 2.3552 0.256 4.608 0.6656 6.8096 79.616-91.8528 132.608-207.36 147.0976-334.592-84.2752 17.0496-147.7632 91.5456-147.7632 180.8896z" fill="#8486F8" p-id="4467"></path>
-							<path d="M433.5616 175.0528c-33.6384-35.5328-81.2032-57.7536-133.9904-57.7536-101.9392 0-184.5248 82.6368-184.5248 184.5248 0 38.8608 12.032 74.9568 32.6144 104.704 117.1456-46.592 216.6784-128 285.9008-231.4752z" fill="#8D92F8" p-id="4468"></path>
-						</svg>
-					</svgw>
+					<view v-if="item.uid!=me.uid" class="fixe l" style="flex:1;min-height:100%;">
+						<view style="background-color:#ffffff;padding:10px;color:#000000;border-radius:5px;">
+							<text>{{item.content}}</text>
+						</view>
+					</view>
+					<view v-if="item.uid==me.uid" class="fixe r" style="flex:1;min-height:100%;">
+						<view style="background-color:#1890ff;padding:10px;color:#ffffff;border-radius:20px;border-top-right-radius:0px;">
+							<text>{{item.content}}</text>
+						</view>
+					</view>
+					<view style="width:80px;min-height:100%;" class="c t">
+						<view style="width:44px;height:44px;border-radius:90px;background-color:#1890ff;color:#ffffff;margin-top:-10px;" class="e c" v-if="item.uid==me.uid">
+							<img style="width:100%;height:100%;border-radius:90px;" mode="scaleToFill" :src="item.header"></img>
+						</view>
+					</view>
 				</view>
-				<view class="col-7">更多</view>
 			</view>
+		</scroll-view>
+		<view class="ux-flex b ux-b" style="background-color:#f2f3f5;padding:0px 10px;" @click="showPanel()">
+			<navigator style="width:40px;min-height:60px;" class="e c" v-if="inputMode==1" url="#" open-type="navigate" @click="inputMode=2">
+				<icon class="iconfont icon-sound" style="font-size:28px;" type=""></icon>
+			</navigator>
+			<navigator style="width:40px;min-height:60px;" class="e c" v-if="inputMode==2" url="#" open-type="navigate" @click="inputMode=1">
+				<icon class="iconfont icon-comment" style="font-size:28px;padding-top:2px;" type=""></icon>
+			</navigator>
+			<view class="fixe e" style="flex:1;min-height:60px;height:100%;padding:5px;" v-if="inputMode==1">
+				<view style="background-color:#ffffff;border:0;width:100%;min-height:32px;border-radius:20px;padding:8px 10px;">
+					<textarea auto-height="true" style="width:100%;border:0;min-height:20px;outline:none;box-sizing: border-box;line-height:16px;height:16px;padding:0px 5px;overflow:hidden;font-size:16px;" v-model="content" @input="onContent" @confirm="onSend"></textarea>
+				</view>
+			</view>
+			<view class="fixe e" style="flex:1;min-height:60px;padding:0px 5px;" v-if="inputMode==2">
+				<navigator style="width:100%;background-color:#1890ff;color:#ffffff;height:36px;border-radius:90px;" class="e c">
+					<text>按住说话</text>
+				</navigator>
+			</view>
+			<navigator style="width:40px;min-height:60px;" class="e c" url="#" open-type="navigate" @click.stop="showPanel('emoji')">
+				<icon class="iconfont icon-emoji" style="font-size:28px;" type=""></icon>
+			</navigator>
+			<navigator style="width:40px;min-height:60px;" class="e c" @click.stop="showPanel('sender')">
+				<icon class="iconfont icon-roundadd" style="font-size:28px;" type=""></icon>
+			</navigator>
 		</view>
-		<view class="ux-flex c e" style="height:34px;background-color:#f7f7f7;">
-			<view style="width:45px;min-height:100%;" class="e c">
-				<icon class="iconfont icon-voice" style="font-size:28px;" type=""></icon>
+		<scroll-view scroll-y="true" style="height:100%;" v-if="panel=='emoji'">
+			<view class="ux-wraper" style="padding:5px;">
+				<navigator style="width:50px;height:50px;margin:1px;float:left;font-size:22px;" v-for="(item,index) in emojis" class="e c" url="#" open-type="navigate" @click="onEmoji(index)">{{emojis[index]}}</navigator>
+				<view style="clear:both;"></view>
 			</view>
-			<view style="width:238px;height:100%;border-radius:10px;background-color:#ffffff;padding:5px;" class="e row r">
-				<view class="col-2 e r" style="height:100%;">
-					<icon class="iconfont icon-zanzan-copy" style="font-size:20px;" type=""></icon>
-				</view>
+			<view class="ux-flex" style="position:fixed;z-index:9;bottom:5px;right:5px;" v-if="content">
+				<navigator style="width:66px;min-height:100%;height:44px;background-color:#ffffff;border-radius:5px;" class="e c" @click="onBackspace">删除</navigator>
+				<navigator style="width:66px;min-height:100%;margin:5px;height:44px;background-color:#1890ff;border-radius:5px;" class="e c" @click="onSend">
+					<text style="color:#ffffff;">发送</text>
+				</navigator>
 			</view>
-			<view style="width:80px;min-height:100%;" class="row">
-				<view class="col-6 e c" style="height:100%;">
-					<icon class="iconfont icon-wang" style="font-size:28px;" type=""></icon>
+		</scroll-view>
+		<view class="row" style="width:100%;padding:10px;" v-if="panel=='sender'">
+			<navigator class="col-3 c e" style="height:100px;">
+				<view class="ux-flex" style="flex-flow:column;width:55px;height:88px;">
+					<view style="min-width:100%;height:55px;background-color:#ffffff;border-radius:10px;" class="e c">
+						<icon class="iconfont icon-tupian2" style="font-size:28px;color:#808080;"></icon>
+					</view>
+					<view class="fixe c e" style="min-width:100%;flex:1;">
+						<text>照片</text>
+					</view>
 				</view>
-				<view class="col-6 e c" style="height:100%;">
-					<icon class="iconfont icon-add1" style="font-size:28px;" type=""></icon>
+			</navigator>
+			<navigator class="col-3 c e" style="height:100px;">
+				<view class="ux-flex" style="flex-flow:column;width:55px;height:88px;">
+					<view style="min-width:100%;height:55px;background-color:#ffffff;border-radius:10px;" class="e c">
+						<icon class="iconfont icon-cameraaddfill" style="font-size:28px;color:#808080;"></icon>
+					</view>
+					<view class="fixe c e" style="min-width:100%;flex:1;">
+						<text>拍照</text>
+					</view>
 				</view>
-			</view>
+			</navigator>
+			<navigator class="col-3 c e" style="height:100px;">
+				<view class="ux-flex" style="flex-flow:column;width:55px;height:88px;">
+					<view style="min-width:100%;height:55px;background-color:#ffffff;border-radius:10px;" class="e c">
+						<icon class="iconfont icon-recordfill" style="font-size:28px;color:#808080;"></icon>
+					</view>
+					<view class="fixe c e" style="min-width:100%;flex:1;">
+						<text>视频</text>
+					</view>
+				</view>
+			</navigator>
+			<navigator class="col-3 c e" style="height:100px;">
+				<view class="ux-flex" style="flex-flow:column;width:55px;height:88px;">
+					<view style="min-width:100%;height:55px;background-color:#ffffff;border-radius:10px;" class="e c">
+						<icon class="iconfont icon-unie62c" style="font-size:28px;color:#808080;"></icon>
+					</view>
+					<view class="fixe c e" style="min-width:100%;flex:1;">
+						<text>位置</text>
+					</view>
+				</view>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -78,10 +135,21 @@ import utils from "../../lib/utils.js";
 export default{
 	data(){
 		return {
-			entity:{},
-			list:[],
-			vm:{"style":{"navigationBarTitleText":"聊天","navigationStyle":"custom"}},
+			cid:112233,//会话标识(页面参数)
+			nickname:null,//对方昵称(页面参数)
+			header:null,//对方头像(页面参数)
+			me:{"uid":888888},//我的信息(接口返回)
+			ta:{},//TA的信息(接口返回)
+			list:[],//数据列表(接口返回)
+			inputMode:1,//输入模式(定义变量)
+			height:16,
+			textarea:null,
+			emojis:["😀","😃","😄","😁","😆","😅","🤣","😂","🙂","🙃","😉","😊","😇","🥰","😍","🤩","😘","😗","😚","😙","😋","😛","😜","🤪","😝","🤑","🤗","🤭","🤫","🤔","🤐","🤨","😐","😑","😶","😏","😒","🙄","😬","🤥","😌","😔","😪","🤤","😴","😷","🤒","🤕","🤢","🤮","🤧","🥵","🥶","🥴","😵","🤯","🤠","🥳","😎","🤓","🧐","😕","😟","🙁","😮","😯","😲","😳","🥺","😦","😧","😨","😰","😥","😢","😭","😱","😖","😣","😞","😓","😩","😫","🥱","😤","😡","😠","🤬","😈","👿","💀","☠","*","🤡","👹","👺","👻","👽","👾","🤖","😺","😸","😹","😻","😼","😽","🙀","😿","😾","🙈","🙉","🙊","💋","💌","💘","💝","💖","💗","💓","💞","💕","💟","❣","💔","❤","🧡","💛","💚","💙","💜","🤎","🖤","🤍","💯","💢","💥","💫","💦","💨","🕳","💣","💬","🗨","🗯","💭","💤"],//表情符号(定义变量)
+			content:null,//输入内容(定义变量)
+			panel:null,//显示面板类型(定义变量)
+			entity:{},//实体对象(定义变量)
 			triggered:true,
+			vm:{"style":{"navigationBarTitleText":"新微数字","navigationStyle":"custom"},"flag":"8764244b175a0f9eb779cb22a0d13670"},
 		}
 	},
 	onLoad:function(options){
@@ -95,6 +163,36 @@ export default{
 		},
 		onInitialize:function(options){
 			//在此添加你的页面初始化数据...
+			this.content="";
+		},
+		onReset:function(){
+			this.showEmoji=false;
+		},
+		showPanel:function(/*面板类型*/type){
+			this.panel=type;
+		},
+		onEmoji(index){
+			this.content+=this.emojis[index];
+		},
+		onBackspace:function(){
+			if(!this.content)return;
+			this.content=this.content.trim();
+			if((/([\uD800-\uDBFF][\uDC00-\uDFFF])$/).test(this.content)){
+				this.content = this.content.substring(0,this.content.length-2)
+			}else{
+				this.content = this.content.substring(0,this.content.length-1)
+			}
+		},
+		onContent(e){
+			// 注意：想要拿到元素实例，需要在实例已经挂载到页面上才可以
+			const query = uni.createSelectorQuery().in(this);
+			query.select('#textarea').boundingClientRect(data => {
+				console.log(data)
+			}).exec();
+		},
+		onSend:function(){
+			this.content = "";	
+		  
 		},
 	},
 	onShareAppMessage:function(options){
@@ -102,7 +200,7 @@ export default{
 			utils.request({
 				url:'/api/lib/share.vo',
 				data:{
-					title:this.pageTitle||this.getLang("","{title}"),
+					title:"会话",
 					path:"/pages/im/chat",
 					options:this.__options__
 				},
@@ -115,16 +213,16 @@ export default{
 	    })
 	    return {promise};
 	},
+	onShow:function(){
+		this._onShow();
+	},
 	onShareTimeline:function(options){
 		return {
-			title:this.pageTitle||this.getLang("","{title}"),
+			title:this.pageTitle||this.getLang("会话","{title}"),
 			path:"/pages/im/chat",
 			imageUrl:this.pageImageUrl,
 			query:this.optionstr
 		}
-	},
-	onShow:function(){
-		if(this._onShow)this._onShow();
 	},
 }
 </script>

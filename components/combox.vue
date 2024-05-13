@@ -1,17 +1,18 @@
 <template>
 	<view @tap.stop="onStop()" class="e" style=" position: relative;  min-height:32px; height: 100%; width: 100%; font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">
-		<view v-if="etype=='default' && !action" @click="onShowSheet" style="padding: 5px 0; width: 100%;font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">{{label||"请选择..."}}</view>
-		<view v-if="etype=='picker'" style="padding: 5px 0; width: 100%;font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">{{label||"请选择..."}}</view>
-		<view v-if="etype=='picker'" style="position:absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2; ">
+		<view v-if="readonly" style="background-color: rgba(0,0,0,0); width: 100%; height: 100%; z-index: 99999; position: absolute;"><text></text></view>
+		<view v-if="itype=='default' && !action" @click="onShowSheet" style="padding: 5px 0; width: 100%;font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">{{label||text||(readonly?"":"请选择...")}}</view>
+		<view v-if="itype=='picker'" style="padding: 5px 0; width: 100%;font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">{{label||text||(readonly?"":"请选择...")}}</view>
+		<view v-if="itype=='picker'" style="position:absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2; ">
 			<picker @change="bindPickerChange" :value="index" range-key="text" :range="list" style=" color: red; width: 100%; height: 100%;">
 				<view style="position:absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 2; "></view>
 			</picker>
 		</view>
-		<view v-if="(etype=='popup' || action)" class="e" style="min-height:32px; height: 100%; width: 100%; font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">
-			<view @click="onShowPopup" class="d" style="padding: 5px 0; width: 100%;font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">{{label||"请选择..."}}</view>
+		<view v-if="(itype=='popup' || action)" class="e" style="min-height:32px; height: 100%; width: 100%; font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">
+			<view @click="onShowPopup" class="d" style="padding: 5px 0; width: 100%;font-size: inherit; color: inherit; text-indent: inherit; text-align: inherit;">{{label||text||(readonly?"":"请选择...")}}</view>
 		</view>
 		<root-portal>
-			<view v-if="(etype=='popup' || action) && showOptions" @touchmove.stop.prevent="" style=" position:fixed;width:100%;height:100%;background-color:rgba(0,0,0,0.30);z-index:999;top:0px;left:0px;color:#000;" :class="type=='bottom'?'b':'e'" :style="{padding:type=='bottom'?'0':'0px'}">
+			<view v-if="(itype=='popup' || action) && showOptions" @touchmove.stop.prevent="" style=" position:fixed;width:100%;height:100%;background-color:rgba(0,0,0,0.30);z-index:999;top:0px;left:0px;color:#000;" :class="type=='bottom'?'b':'e'" :style="{padding:type=='bottom'?'0':'0px'}">
 				<view class="ux-flex" style="flex-flow:column; width: 100%; height:100%;overflow: hidden;background-color:#ffffff;">
 					<view style="height:60px;width:100%;" class="ux-b ux-flex focus">
 						<view style="width:15px;height:100%;" class="b c">
@@ -31,7 +32,7 @@
 						</view>
 						<view class="fixe e" style="flex:1;height:100%;">
 							<span v-if="input!='query'" style=" font-size: 16px; font-weight: bold;">选择{{title}}</span>
-							<input v-if="input=='query'" v-model="keyword" @input="onKeyword" type="text" style=" border:0px;width:100%;height:100%;background:transparent;margin:0px;color:#000000;font-size:14px;line-height:32px;padding:0px;border-radius:0px;" placeholder="请输入要搜索的内容..."></input>
+							<input v-if="input=='query'" v-model="keyword" @input="onKeyword" type="text" style=" border:0px;width:100%;height:100%;background:transparent;margin:0px;color:#000000;font-size:inherit;line-height:32px;padding:0px;border-radius:0px;" placeholder="请输入要搜索的内容..."></input>
 						</view>
 						<view @click="onItem(null)" style="width:44px;height:100%;height:44px;" class="e c">
 							<icon class="iconfont icon-delete" style="font-size:18px;color:#000000;"></icon>
@@ -52,7 +53,7 @@
 											<icon v-else style="font-size: 14px;" class="iconfont icon-playfill"></icon>
 										</view>
 										<view class="fixe e d" style="flex:1;min-height:100%;">
-											<view class="d" style="width:100%; font-size: 16px;">{{item.text||item.title||item.name}}</view>
+											<view class="d" style="width:100%; font-size: 16px;">{{item.text||item.title||item.name||item.keyValue}}</view>
 										</view>
 										<view style="width:55px;min-height:100%; font-weight: bold;" class="e c d">
 											<icon v-if="(item.id||item.value)==(entity.id||entity.value)" style="font-size: 22px;" class="iconfont icon-check"></icon>
@@ -63,7 +64,7 @@
 									<navigator @click="onItem(item)" url="#" style="height:50px;" class="ux-flex ux-b focus" v-for="item in list">
 										<view class="em" style="width: 25px; height: 100%;"></view>
 										<view class="fixe e d" style="flex:1;min-height:100%;">
-											<view class="d" style="width:100%; font-size: 16px;">{{item.text||item.title||item.name}}</view>
+											<view class="d" style="width:100%; font-size: 16px;">{{item.text||item.title||item.name||item.keyValue}}</view>
 										</view>
 										<view style="width:55px;min-height:100%; font-weight: bold;" class="e c d">
 											<icon v-if="(item.id||item.value)==(entity.id||entity.value)" style="font-size: 22px;" class="iconfont icon-check"></icon>
@@ -97,7 +98,7 @@ export default{
 			list:[],
 			root:[],
 			tree:[],
-			etype:"default",
+			itype:"default",
 			keyword:null,
 		}
 	},
@@ -109,7 +110,7 @@ export default{
 			type:[String,Array,Object],
 			default:() => {},
 		},
-		type:{
+		etype:{
 			type:String,
 			default:"default",
 		},
@@ -124,6 +125,10 @@ export default{
 		},
 		input:{
 			type:String
+		},
+		readonly:{
+			type:Boolean,
+			default:false
 		}
 	},
 	model:{
@@ -144,14 +149,14 @@ export default{
 			this.list = this.convert(items);
 			this.onInitValue();
 		},
-		type(value){
-			this.etype = this.type;
+		etype(value){
+			this.itype = this.etype;
 		}
 	},
 	created:function(){
-		utils._init(this,{});
+		utils._init(this,{},true);
 		this.label = this.text;
-		this.etype = this.type;
+		this.itype = this.etype;
 		if(this.items && this.items.length){
 			this.list = this.convert(this.items);
 			this.onInitValue();
@@ -166,7 +171,7 @@ export default{
 					this.onInitValue();
 				});
 			}else if(!this.list.length){
-				this.getList({parent:0},(list)=>{
+				this.getList({parent:this.input=='tree'?0:null},(list)=>{
 					this.root = [{
 						text:"顶级节点",
 						value:0,
@@ -187,7 +192,7 @@ export default{
 		onNode(item){
 			item.expand = !item.expand;
 			if(!item.requested){
-				this.getList({parent:item.value},(list)=>{
+				this.getList({parent:item.value||item.id},(list)=>{
 					item.children = list;
 					item.requested = true;
 					this.tree = this.convertTree(this.root);
@@ -211,17 +216,24 @@ export default{
 			return result;
 		},
 		getList(params,callback){
+			let header = {};
+			if(this.action.indexOf("api/")==-1 && uni.getStorageSync("Bearer")){
+				header["Authorization"] = "Bearer "+uni.getStorageSync("Bearer");
+			}
 			utils.request({
 				url:this.action,
 				data:params,
-				header:{Authorization:"Bearer "+uni.getStorageSync("Bearer")},
+				header:header,
 				success:(protocol)=>{
 					if(protocol.success||protocol.code==200){
-						if(callback){
-							callback(protocol.data);
+						if(protocol.data){
+							let list = protocol.data.list || protocol.data;
+							if(callback){
+								callback(list);
+							}
+							this.list = list;
+							this.onInitValue();
 						}
-						this.list = protocol.data;
-						this.onInitValue();
 					}
 				}
 			});
@@ -261,7 +273,7 @@ export default{
 				}
 			}
 			if(this.list.length>6){
-				this.etype = "popup";
+				this.itype = "popup";
 			}
 		},
 		onShowSheet(){

@@ -75,7 +75,7 @@ export default{
 		},
 	},
 	created:function(options){
-		utils._init(this,{});
+		utils._init(this,{},true);
 	},
 	methods:{
 		toFixed(n){

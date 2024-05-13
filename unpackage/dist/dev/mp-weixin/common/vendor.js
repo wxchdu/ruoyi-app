@@ -1,6 +1,6 @@
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],[
-/* 0 */,
-/* 1 */
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
+
+/***/ 1:
 /*!*********************************************************!*\
   !*** ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js ***!
   \*********************************************************/
@@ -43,7 +43,1191 @@ var _default = target[key];
 exports.default = _default;
 
 /***/ }),
-/* 2 */
+
+/***/ 10:
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 11:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ 12);
+function _defineProperty(obj, key, value) {
+  key = toPropertyKey(key);
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+  return obj;
+}
+module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 12:
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPropertyKey.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
+var toPrimitive = __webpack_require__(/*! ./toPrimitive.js */ 14);
+function toPropertyKey(t) {
+  var i = toPrimitive(t, "string");
+  return "symbol" == _typeof(i) ? i : String(i);
+}
+module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 13:
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(o) {
+  "@babel/helpers - typeof";
+
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
+}
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 14:
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return ("string" === r ? String : Number)(t);
+}
+module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 15:
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 16);
+var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 17);
+function _construct(t, e, r) {
+  if (isNativeReflectConstruct()) return Reflect.construct.apply(null, arguments);
+  var o = [null];
+  o.push.apply(o, e);
+  var p = new (t.bind.apply(t, o))();
+  return r && setPrototypeOf(p, r.prototype), p;
+}
+module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 16:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _setPrototypeOf(o, p);
+}
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 162:
+/*!*********************************************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni_modules/uni-calendar/components/uni-calendar/util.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
+var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 163));
+var Calendar = /*#__PURE__*/function () {
+  function Calendar() {
+    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      date = _ref.date,
+      selected = _ref.selected,
+      startDate = _ref.startDate,
+      endDate = _ref.endDate,
+      range = _ref.range;
+    (0, _classCallCheck2.default)(this, Calendar);
+    // 当前日期
+    this.date = this.getDate(new Date()); // 当前初入日期
+    // 打点信息
+    this.selected = selected || [];
+    // 范围开始
+    this.startDate = startDate;
+    // 范围结束
+    this.endDate = endDate;
+    this.range = range;
+    // 多选状态
+    this.cleanMultipleStatus();
+    // 每周日期
+    this.weeks = {};
+    // this._getWeek(this.date.fullDate)
+  }
+  /**
+   * 设置日期
+   * @param {Object} date
+   */
+  (0, _createClass2.default)(Calendar, [{
+    key: "setDate",
+    value: function setDate(date) {
+      this.selectDate = this.getDate(date);
+      this._getWeek(this.selectDate.fullDate);
+    }
+
+    /**
+     * 清理多选状态
+     */
+  }, {
+    key: "cleanMultipleStatus",
+    value: function cleanMultipleStatus() {
+      this.multipleStatus = {
+        before: '',
+        after: '',
+        data: []
+      };
+    }
+
+    /**
+     * 重置开始日期
+     */
+  }, {
+    key: "resetSatrtDate",
+    value: function resetSatrtDate(startDate) {
+      // 范围开始
+      this.startDate = startDate;
+    }
+
+    /**
+     * 重置结束日期
+     */
+  }, {
+    key: "resetEndDate",
+    value: function resetEndDate(endDate) {
+      // 范围结束
+      this.endDate = endDate;
+    }
+
+    /**
+     * 获取任意时间
+     */
+  }, {
+    key: "getDate",
+    value: function getDate(date) {
+      var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
+      if (!date) {
+        date = new Date();
+      }
+      if ((0, _typeof2.default)(date) !== 'object') {
+        date = date.replace(/-/g, '/');
+      }
+      var dd = new Date(date);
+      switch (str) {
+        case 'day':
+          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
+          break;
+        case 'month':
+          if (dd.getDate() === 31 && AddDayCount > 0) {
+            dd.setDate(dd.getDate() + AddDayCount);
+          } else {
+            var preMonth = dd.getMonth();
+            dd.setMonth(preMonth + AddDayCount); // 获取AddDayCount天后的日期
+            var nextMonth = dd.getMonth();
+            // 处理 pre 切换月份目标月份为2月没有当前日(30 31) 切换错误问题
+            if (AddDayCount < 0 && preMonth !== 0 && nextMonth - preMonth > AddDayCount) {
+              dd.setMonth(nextMonth + (nextMonth - preMonth + AddDayCount));
+            }
+            // 处理 next 切换月份目标月份为2月没有当前日(30 31) 切换错误问题
+            if (AddDayCount > 0 && nextMonth - preMonth > AddDayCount) {
+              dd.setMonth(nextMonth - (nextMonth - preMonth - AddDayCount));
+            }
+          }
+          break;
+        case 'year':
+          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
+          break;
+      }
+      var y = dd.getFullYear();
+      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
+      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
+      return {
+        fullDate: y + '-' + m + '-' + d,
+        year: y,
+        month: m,
+        date: d,
+        day: dd.getDay()
+      };
+    }
+
+    /**
+     * 获取上月剩余天数
+     */
+  }, {
+    key: "_getLastMonthDays",
+    value: function _getLastMonthDays(firstDay, full) {
+      var dateArr = [];
+      for (var i = firstDay; i > 0; i--) {
+        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
+        dateArr.push({
+          date: beforeDate,
+          month: full.month - 1,
+          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
+          disable: true
+        });
+      }
+      return dateArr;
+    }
+    /**
+     * 获取本月天数
+     */
+  }, {
+    key: "_currentMonthDys",
+    value: function _currentMonthDys(dateData, full) {
+      var _this = this;
+      var dateArr = [];
+      var fullDate = this.date.fullDate;
+      var _loop = function _loop(i) {
+        var nowDate = full.year + '-' + (full.month < 10 ? full.month : full.month) + '-' + (i < 10 ? '0' + i : i);
+        // 是否今天
+        var isDay = fullDate === nowDate;
+        // 获取打点信息
+        var info = _this.selected && _this.selected.find(function (item) {
+          if (_this.dateEqual(nowDate, item.date)) {
+            return item;
+          }
+        });
+
+        // 日期禁用
+        var disableBefore = true;
+        var disableAfter = true;
+        if (_this.startDate) {
+          // let dateCompBefore = this.dateCompare(this.startDate, fullDate)
+          // disableBefore = this.dateCompare(dateCompBefore ? this.startDate : fullDate, nowDate)
+          disableBefore = _this.dateCompare(_this.startDate, nowDate);
+        }
+        if (_this.endDate) {
+          // let dateCompAfter = this.dateCompare(fullDate, this.endDate)
+          // disableAfter = this.dateCompare(nowDate, dateCompAfter ? this.endDate : fullDate)
+          disableAfter = _this.dateCompare(nowDate, _this.endDate);
+        }
+        var multiples = _this.multipleStatus.data;
+        var checked = false;
+        var multiplesStatus = -1;
+        if (_this.range) {
+          if (multiples) {
+            multiplesStatus = multiples.findIndex(function (item) {
+              return _this.dateEqual(item, nowDate);
+            });
+          }
+          if (multiplesStatus !== -1) {
+            checked = true;
+          }
+        }
+        var data = {
+          fullDate: nowDate,
+          year: full.year,
+          date: i,
+          multiple: _this.range ? checked : false,
+          beforeMultiple: _this.dateEqual(_this.multipleStatus.before, nowDate),
+          afterMultiple: _this.dateEqual(_this.multipleStatus.after, nowDate),
+          month: full.month,
+          lunar: _this.getlunar(full.year, full.month, i),
+          disable: !(disableBefore && disableAfter),
+          isDay: isDay
+        };
+        if (info) {
+          data.extraInfo = info;
+        }
+        dateArr.push(data);
+      };
+      for (var i = 1; i <= dateData; i++) {
+        _loop(i);
+      }
+      return dateArr;
+    }
+    /**
+     * 获取下月天数
+     */
+  }, {
+    key: "_getNextMonthDays",
+    value: function _getNextMonthDays(surplus, full) {
+      var dateArr = [];
+      for (var i = 1; i < surplus + 1; i++) {
+        dateArr.push({
+          date: i,
+          month: Number(full.month) + 1,
+          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
+          disable: true
+        });
+      }
+      return dateArr;
+    }
+
+    /**
+     * 获取当前日期详情
+     * @param {Object} date
+     */
+  }, {
+    key: "getInfo",
+    value: function getInfo(date) {
+      var _this2 = this;
+      if (!date) {
+        date = new Date();
+      }
+      var dateInfo = this.canlender.find(function (item) {
+        return item.fullDate === _this2.getDate(date).fullDate;
+      });
+      return dateInfo;
+    }
+
+    /**
+     * 比较时间大小
+     */
+  }, {
+    key: "dateCompare",
+    value: function dateCompare(startDate, endDate) {
+      // 计算截止时间
+      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
+      // 计算详细项的截止时间
+      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
+      if (startDate <= endDate) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    /**
+     * 比较时间是否相等
+     */
+  }, {
+    key: "dateEqual",
+    value: function dateEqual(before, after) {
+      // 计算截止时间
+      before = new Date(before.replace('-', '/').replace('-', '/'));
+      // 计算详细项的截止时间
+      after = new Date(after.replace('-', '/').replace('-', '/'));
+      if (before.getTime() - after.getTime() === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    /**
+     * 获取日期范围内所有日期
+     * @param {Object} begin
+     * @param {Object} end
+     */
+  }, {
+    key: "geDateAll",
+    value: function geDateAll(begin, end) {
+      var arr = [];
+      var ab = begin.split('-');
+      var ae = end.split('-');
+      var db = new Date();
+      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
+      var de = new Date();
+      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
+      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
+      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
+      for (var k = unixDb; k <= unixDe;) {
+        k = k + 24 * 60 * 60 * 1000;
+        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
+      }
+      return arr;
+    }
+    /**
+     * 计算阴历日期显示
+     */
+  }, {
+    key: "getlunar",
+    value: function getlunar(year, month, date) {
+      return _calendar.default.solar2lunar(year, month, date);
+    }
+    /**
+     * 设置打点
+     */
+  }, {
+    key: "setSelectInfo",
+    value: function setSelectInfo(data, value) {
+      this.selected = value;
+      this._getWeek(data);
+    }
+
+    /**
+     *  获取多选状态
+     */
+  }, {
+    key: "setMultiple",
+    value: function setMultiple(fullDate) {
+      var _this$multipleStatus = this.multipleStatus,
+        before = _this$multipleStatus.before,
+        after = _this$multipleStatus.after;
+      if (!this.range) return;
+      if (before && after) {
+        this.multipleStatus.before = '';
+        this.multipleStatus.after = '';
+        this.multipleStatus.data = [];
+      } else {
+        if (!before) {
+          this.multipleStatus.before = fullDate;
+        } else {
+          this.multipleStatus.after = fullDate;
+          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
+            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
+          } else {
+            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
+          }
+        }
+      }
+      this._getWeek(fullDate);
+    }
+
+    /**
+     * 获取每周数据
+     * @param {Object} dateData
+     */
+  }, {
+    key: "_getWeek",
+    value: function _getWeek(dateData) {
+      var _this$getDate = this.getDate(dateData),
+        year = _this$getDate.year,
+        month = _this$getDate.month;
+      var firstDay = new Date(year, month - 1, 1).getDay();
+      var currentDay = new Date(year, month, 0).getDate();
+      var dates = {
+        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)),
+        // 上个月末尾几天
+        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)),
+        // 本月天数
+        nextMonthDays: [],
+        // 下个月开始几天
+        weeks: []
+      };
+      var canlender = [];
+      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
+      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
+      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
+      var weeks = {};
+      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
+      for (var i = 0; i < canlender.length; i++) {
+        if (i % 7 === 0) {
+          weeks[parseInt(i / 7)] = new Array(7);
+        }
+        weeks[parseInt(i / 7)][i % 7] = canlender[i];
+      }
+      this.canlender = canlender;
+      this.weeks = weeks;
+    }
+
+    //静态方法
+    // static init(date) {
+    // 	if (!this.instance) {
+    // 		this.instance = new Calendar(date);
+    // 	}
+    // 	return this.instance;
+    // }
+  }]);
+  return Calendar;
+}();
+var _default = Calendar;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 163:
+/*!*************************************************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni_modules/uni-calendar/components/uni-calendar/calendar.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/**
+* @1900-2100区间内的公历、农历互转
+* @charset UTF-8
+* @github  https://github.com/jjonline/calendar.js
+* @Author  Jea杨(JJonline@JJonline.Cn)
+* @Time    2014-7-21
+* @Time    2016-8-13 Fixed 2033hex、Attribution Annals
+* @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
+* @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
+* @Version 1.0.3
+* @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
+* @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
+*/
+/* eslint-disable */
+var calendar = {
+  /**
+      * 农历1900-2100的润大小信息表
+      * @Array Of Property
+      * @return Hex
+      */
+  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,
+  // 1900-1909
+  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977,
+  // 1910-1919
+  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970,
+  // 1920-1929
+  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950,
+  // 1930-1939
+  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557,
+  // 1940-1949
+  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0,
+  // 1950-1959
+  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0,
+  // 1960-1969
+  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6,
+  // 1970-1979
+  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570,
+  // 1980-1989
+  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0,
+  // 1990-1999
+  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5,
+  // 2000-2009
+  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930,
+  // 2010-2019
+  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530,
+  // 2020-2029
+  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45,
+  // 2030-2039
+  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0,
+  // 2040-2049
+  /** Add By JJonline@JJonline.Cn**/
+  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0,
+  // 2050-2059
+  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4,
+  // 2060-2069
+  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0,
+  // 2070-2079
+  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160,
+  // 2080-2089
+  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252,
+  // 2090-2099
+  0x0d520],
+  // 2100
+
+  /**
+      * 公历每个月份的天数普通表
+      * @Array Of Property
+      * @return Number
+      */
+  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+  /**
+      * 天干地支之天干速查表
+      * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
+      * @return Cn string
+      */
+  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
+  /**
+      * 天干地支之地支速查表
+      * @Array Of Property
+      * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
+      * @return Cn string
+      */
+  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
+  /**
+      * 天干地支之地支速查表<=>生肖
+      * @Array Of Property
+      * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
+      * @return Cn string
+      */
+  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
+  /**
+      * 24节气速查表
+      * @Array Of Property
+      * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
+      * @return Cn string
+      */
+  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
+  /**
+      * 1900-2100各年的24节气日期速查表
+      * @Array Of Property
+      * @return 0x string For splice
+      */
+  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
+  /**
+      * 数字转中文速查表
+      * @Array Of Property
+      * @trans ['日','一','二','三','四','五','六','七','八','九','十']
+      * @return Cn string
+      */
+  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
+  /**
+      * 日期转农历称呼速查表
+      * @Array Of Property
+      * @trans ['初','十','廿','卅']
+      * @return Cn string
+      */
+  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
+  /**
+      * 月份转农历称呼速查表
+      * @Array Of Property
+      * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
+      * @return Cn string
+      */
+  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
+  /**
+      * 返回农历y年一整年的总天数
+      * @param lunar Year
+      * @return Number
+      * @eg:var count = calendar.lYearDays(1987) ;//count=387
+      */
+  lYearDays: function lYearDays(y) {
+    var i;
+    var sum = 348;
+    for (i = 0x8000; i > 0x8; i >>= 1) {
+      sum += this.lunarInfo[y - 1900] & i ? 1 : 0;
+    }
+    return sum + this.leapDays(y);
+  },
+  /**
+      * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
+      * @param lunar Year
+      * @return Number (0-12)
+      * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
+      */
+  leapMonth: function leapMonth(y) {
+    // 闰字编码 \u95f0
+    return this.lunarInfo[y - 1900] & 0xf;
+  },
+  /**
+      * 返回农历y年闰月的天数 若该年没有闰月则返回0
+      * @param lunar Year
+      * @return Number (0、29、30)
+      * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
+      */
+  leapDays: function leapDays(y) {
+    if (this.leapMonth(y)) {
+      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
+    }
+    return 0;
+  },
+  /**
+      * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
+      * @param lunar Year
+      * @return Number (-1、29、30)
+      * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
+      */
+  monthDays: function monthDays(y, m) {
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 月份参数从1至12，参数错误返回-1
+    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
+  },
+  /**
+      * 返回公历(!)y年m月的天数
+      * @param solar Year
+      * @return Number (-1、28、29、30、31)
+      * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
+      */
+  solarDays: function solarDays(y, m) {
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 若参数错误 返回-1
+    var ms = m - 1;
+    if (ms == 1) {
+      // 2月份的闰平规律测算后确认返回28或29
+      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
+    } else {
+      return this.solarMonth[ms];
+    }
+  },
+  /**
+     * 农历年份转换为干支纪年
+     * @param  lYear 农历年的年份数
+     * @return Cn string
+     */
+  toGanZhiYear: function toGanZhiYear(lYear) {
+    var ganKey = (lYear - 3) % 10;
+    var zhiKey = (lYear - 3) % 12;
+    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
+    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
+    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
+  },
+  /**
+     * 公历月、日判断所属星座
+     * @param  cMonth [description]
+     * @param  cDay [description]
+     * @return Cn string
+     */
+  toAstro: function toAstro(cMonth, cDay) {
+    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
+    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
+    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
+  },
+
+  /**
+      * 传入offset偏移量返回干支
+      * @param offset 相对甲子的偏移量
+      * @return Cn string
+      */
+  toGanZhi: function toGanZhi(offset) {
+    return this.Gan[offset % 10] + this.Zhi[offset % 12];
+  },
+  /**
+      * 传入公历(!)y年获得该年第n个节气的公历日期
+      * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
+      * @return day Number
+      * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
+      */
+  getTerm: function getTerm(y, n) {
+    if (y < 1900 || y > 2100) {
+      return -1;
+    }
+    if (n < 1 || n > 24) {
+      return -1;
+    }
+    var _table = this.sTermInfo[y - 1900];
+    var _info = [parseInt('0x' + _table.substr(0, 5)).toString(), parseInt('0x' + _table.substr(5, 5)).toString(), parseInt('0x' + _table.substr(10, 5)).toString(), parseInt('0x' + _table.substr(15, 5)).toString(), parseInt('0x' + _table.substr(20, 5)).toString(), parseInt('0x' + _table.substr(25, 5)).toString()];
+    var _calday = [_info[0].substr(0, 1), _info[0].substr(1, 2), _info[0].substr(3, 1), _info[0].substr(4, 2), _info[1].substr(0, 1), _info[1].substr(1, 2), _info[1].substr(3, 1), _info[1].substr(4, 2), _info[2].substr(0, 1), _info[2].substr(1, 2), _info[2].substr(3, 1), _info[2].substr(4, 2), _info[3].substr(0, 1), _info[3].substr(1, 2), _info[3].substr(3, 1), _info[3].substr(4, 2), _info[4].substr(0, 1), _info[4].substr(1, 2), _info[4].substr(3, 1), _info[4].substr(4, 2), _info[5].substr(0, 1), _info[5].substr(1, 2), _info[5].substr(3, 1), _info[5].substr(4, 2)];
+    return parseInt(_calday[n - 1]);
+  },
+  /**
+      * 传入农历数字月份返回汉语通俗表示法
+      * @param lunar month
+      * @return Cn string
+      * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
+      */
+  toChinaMonth: function toChinaMonth(m) {
+    // 月 => \u6708
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 若参数错误 返回-1
+    var s = this.nStr3[m - 1];
+    s += "\u6708"; // 加上月字
+    return s;
+  },
+  /**
+      * 传入农历日期数字返回汉字表示法
+      * @param lunar day
+      * @return Cn string
+      * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
+      */
+  toChinaDay: function toChinaDay(d) {
+    // 日 => \u65e5
+    var s;
+    switch (d) {
+      case 10:
+        s = "\u521D\u5341";
+        break;
+      case 20:
+        s = "\u4E8C\u5341";
+        break;
+        break;
+      case 30:
+        s = "\u4E09\u5341";
+        break;
+        break;
+      default:
+        s = this.nStr2[Math.floor(d / 10)];
+        s += this.nStr1[d % 10];
+    }
+    return s;
+  },
+  /**
+      * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
+      * @param y year
+      * @return Cn string
+      * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
+      */
+  getAnimal: function getAnimal(y) {
+    return this.Animals[(y - 4) % 12];
+  },
+  /**
+      * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
+      * @param y  solar year
+      * @param m  solar month
+      * @param d  solar day
+      * @return JSON object
+      * @eg:console.log(calendar.solar2lunar(1987,11,01));
+      */
+  solar2lunar: function solar2lunar(y, m, d) {
+    // 参数区间1900.1.31~2100.12.31
+    // 年份限定、上限
+    if (y < 1900 || y > 2100) {
+      return -1; // undefined转换为数字变为NaN
+    }
+    // 公历传参最下限
+    if (y == 1900 && m == 1 && d < 31) {
+      return -1;
+    }
+    // 未传参  获得当天
+    if (!y) {
+      var objDate = new Date();
+    } else {
+      var objDate = new Date(y, parseInt(m) - 1, d);
+    }
+    var i;
+    var leap = 0;
+    var temp = 0;
+    // 修正ymd参数
+    var y = objDate.getFullYear();
+    var m = objDate.getMonth() + 1;
+    var d = objDate.getDate();
+    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
+    for (i = 1900; i < 2101 && offset > 0; i++) {
+      temp = this.lYearDays(i);
+      offset -= temp;
+    }
+    if (offset < 0) {
+      offset += temp;
+      i--;
+    }
+
+    // 是否今天
+    var isTodayObj = new Date();
+    var isToday = false;
+    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
+      isToday = true;
+    }
+    // 星期几
+    var nWeek = objDate.getDay();
+    var cWeek = this.nStr1[nWeek];
+    // 数字表示周几顺应天朝周一开始的惯例
+    if (nWeek == 0) {
+      nWeek = 7;
+    }
+    // 农历年
+    var year = i;
+    var leap = this.leapMonth(i); // 闰哪个月
+    var isLeap = false;
+
+    // 效验闰月
+    for (i = 1; i < 13 && offset > 0; i++) {
+      // 闰月
+      if (leap > 0 && i == leap + 1 && isLeap == false) {
+        --i;
+        isLeap = true;
+        temp = this.leapDays(year); // 计算农历闰月天数
+      } else {
+        temp = this.monthDays(year, i); // 计算农历普通月天数
+      }
+      // 解除闰月
+      if (isLeap == true && i == leap + 1) {
+        isLeap = false;
+      }
+      offset -= temp;
+    }
+    // 闰月导致数组下标重叠取反
+    if (offset == 0 && leap > 0 && i == leap + 1) {
+      if (isLeap) {
+        isLeap = false;
+      } else {
+        isLeap = true;
+        --i;
+      }
+    }
+    if (offset < 0) {
+      offset += temp;
+      --i;
+    }
+    // 农历月
+    var month = i;
+    // 农历日
+    var day = offset + 1;
+    // 天干地支处理
+    var sm = m - 1;
+    var gzY = this.toGanZhiYear(year);
+
+    // 当月的两个节气
+    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
+    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
+    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
+
+    // 依据12节气修正干支月
+    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
+    if (d >= firstNode) {
+      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
+    }
+
+    // 传入的日期的节气与否
+    var isTerm = false;
+    var Term = null;
+    if (firstNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 2];
+    }
+    if (secondNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 1];
+    }
+    // 日柱 当月一日与 1900/1/1 相差天数
+    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
+    var gzD = this.toGanZhi(dayCyclical + d - 1);
+    // 该日期所属的星座
+    var astro = this.toAstro(m, d);
+    return {
+      'lYear': year,
+      'lMonth': month,
+      'lDay': day,
+      'Animal': this.getAnimal(year),
+      'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month),
+      'IDayCn': this.toChinaDay(day),
+      'cYear': y,
+      'cMonth': m,
+      'cDay': d,
+      'gzYear': gzY,
+      'gzMonth': gzM,
+      'gzDay': gzD,
+      'isToday': isToday,
+      'isLeap': isLeap,
+      'nWeek': nWeek,
+      'ncWeek': "\u661F\u671F" + cWeek,
+      'isTerm': isTerm,
+      'Term': Term,
+      'astro': astro
+    };
+  },
+  /**
+      * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
+      * @param y  lunar year
+      * @param m  lunar month
+      * @param d  lunar day
+      * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
+      * @return JSON object
+      * @eg:console.log(calendar.lunar2solar(1987,9,10));
+      */
+  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {
+    // 参数区间1900.1.31~2100.12.1
+    var isLeapMonth = !!isLeapMonth;
+    var leapOffset = 0;
+    var leapMonth = this.leapMonth(y);
+    var leapDay = this.leapDays(y);
+    if (isLeapMonth && leapMonth != m) {
+      return -1;
+    } // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
+    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {
+      return -1;
+    } // 超出了最大极限值
+    var day = this.monthDays(y, m);
+    var _day = day;
+    // bugFix 2016-9-25
+    // if month is leap, _day use leapDays method
+    if (isLeapMonth) {
+      _day = this.leapDays(y, m);
+    }
+    if (y < 1900 || y > 2100 || d > _day) {
+      return -1;
+    } // 参数合法性效验
+
+    // 计算农历的时间差
+    var offset = 0;
+    for (var i = 1900; i < y; i++) {
+      offset += this.lYearDays(i);
+    }
+    var leap = 0;
+    var isAdd = false;
+    for (var i = 1; i < m; i++) {
+      leap = this.leapMonth(y);
+      if (!isAdd) {
+        // 处理闰月
+        if (leap <= i && leap > 0) {
+          offset += this.leapDays(y);
+          isAdd = true;
+        }
+      }
+      offset += this.monthDays(y, i);
+    }
+    // 转换闰月农历 需补充该年闰月的前一个月的时差
+    if (isLeapMonth) {
+      offset += day;
+    }
+    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
+    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
+    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
+    var cY = calObj.getUTCFullYear();
+    var cM = calObj.getUTCMonth() + 1;
+    var cD = calObj.getUTCDate();
+    return this.solar2lunar(cY, cM, cD);
+  }
+};
+var _default = calendar;
+exports.default = _default;
+
+/***/ }),
+
+/***/ 164:
+/*!***************************************************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni_modules/uni-calendar/components/uni-calendar/i18n/index.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 165));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 166));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 167));
+var _default = {
+  en: _en.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 165:
+/*!**************************************************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni_modules/uni-calendar/components/uni-calendar/i18n/en.json ***!
+  \**************************************************************************************************/
+/*! exports provided: uni-calender.ok, uni-calender.cancel, uni-calender.today, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, uni-calender.SUN, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-calender.ok\":\"ok\",\"uni-calender.cancel\":\"cancel\",\"uni-calender.today\":\"today\",\"uni-calender.MON\":\"MON\",\"uni-calender.TUE\":\"TUE\",\"uni-calender.WED\":\"WED\",\"uni-calender.THU\":\"THU\",\"uni-calender.FRI\":\"FRI\",\"uni-calender.SAT\":\"SAT\",\"uni-calender.SUN\":\"SUN\"}");
+
+/***/ }),
+
+/***/ 166:
+/*!*******************************************************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni_modules/uni-calendar/components/uni-calendar/i18n/zh-Hans.json ***!
+  \*******************************************************************************************************/
+/*! exports provided: uni-calender.ok, uni-calender.cancel, uni-calender.today, uni-calender.SUN, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-calender.ok\":\"确定\",\"uni-calender.cancel\":\"取消\",\"uni-calender.today\":\"今日\",\"uni-calender.SUN\":\"日\",\"uni-calender.MON\":\"一\",\"uni-calender.TUE\":\"二\",\"uni-calender.WED\":\"三\",\"uni-calender.THU\":\"四\",\"uni-calender.FRI\":\"五\",\"uni-calender.SAT\":\"六\"}");
+
+/***/ }),
+
+/***/ 167:
+/*!*******************************************************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni_modules/uni-calendar/components/uni-calendar/i18n/zh-Hant.json ***!
+  \*******************************************************************************************************/
+/*! exports provided: uni-calender.ok, uni-calender.cancel, uni-calender.today, uni-calender.SUN, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-calender.ok\":\"確定\",\"uni-calender.cancel\":\"取消\",\"uni-calender.today\":\"今日\",\"uni-calender.SUN\":\"日\",\"uni-calender.MON\":\"一\",\"uni-calender.TUE\":\"二\",\"uni-calender.WED\":\"三\",\"uni-calender.THU\":\"四\",\"uni-calender.FRI\":\"五\",\"uni-calender.SAT\":\"六\"}");
+
+/***/ }),
+
+/***/ 17:
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _isNativeReflectConstruct() {
+  try {
+    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+  } catch (t) {}
+  return (module.exports = _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+    return !!t;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
+}
+module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 18:
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ 19);
+var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 20);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ 21);
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 19:
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 2:
 /*!************************************************************!*\
   !*** ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js ***!
   \************************************************************/
@@ -778,7 +1962,7 @@ function populateParameters(result) {
     appId: "__UNI__F3197ED",
     appName: "ruoyi-app",
     appVersion: "1.0.0",
-    appVersionCode: "undefined",
+    appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
     uniCompileVersion: "4.08",
     uniRuntimeVersion: "4.08",
@@ -877,7 +2061,7 @@ var getAppBaseInfo = {
       appId: "__UNI__F3197ED",
       appName: "ruoyi-app",
       appVersion: "1.0.0",
-      appVersionCode: "undefined",
+      appVersionCode: "100",
       appLanguage: getAppLanguage(hostLanguage),
       hostVersion: version,
       hostLanguage: hostLanguage,
@@ -1557,7 +2741,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2450,336 +3634,8 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 3 */
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
 
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 4 */
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 5 */
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 6);
-var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ 7);
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
-var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 10);
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-}
-module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 6 */
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 7 */
-/*!*********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _iterableToArrayLimit(r, l) {
-  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
-  if (null != t) {
-    var e,
-      n,
-      i,
-      u,
-      a = [],
-      f = !0,
-      o = !1;
-    try {
-      if (i = (t = t.call(r)).next, 0 === l) {
-        if (Object(t) !== t) return;
-        f = !1;
-      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0) {
-        ;
-      }
-    } catch (r) {
-      o = !0, n = r;
-    } finally {
-      try {
-        if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
-      } finally {
-        if (o) throw n;
-      }
-    }
-    return a;
-  }
-}
-module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 8 */
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
-}
-module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 9 */
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-  return arr2;
-}
-module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 10 */
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 11 */
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ 12);
-function _defineProperty(obj, key, value) {
-  key = toPropertyKey(key);
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
-module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 12 */
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toPropertyKey.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
-var toPrimitive = __webpack_require__(/*! ./toPrimitive.js */ 14);
-function toPropertyKey(t) {
-  var i = toPrimitive(t, "string");
-  return "symbol" == _typeof(i) ? i : String(i);
-}
-module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 13 */
-/*!*******************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _typeof(o) {
-  "@babel/helpers - typeof";
-
-  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
-    return typeof o;
-  } : function (o) {
-    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
-}
-module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 14 */
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
-function toPrimitive(t, r) {
-  if ("object" != _typeof(t) || !t) return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
-    if ("object" != _typeof(i)) return i;
-    throw new TypeError("@@toPrimitive must return a primitive value.");
-  }
-  return ("string" === r ? String : Number)(t);
-}
-module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 15 */
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/construct.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 16);
-var isNativeReflectConstruct = __webpack_require__(/*! ./isNativeReflectConstruct.js */ 17);
-function _construct(t, e, r) {
-  if (isNativeReflectConstruct()) return Reflect.construct.apply(null, arguments);
-  var o = [null];
-  o.push.apply(o, e);
-  var p = new (t.bind.apply(t, o))();
-  return r && setPrototypeOf(p, r.prototype), p;
-}
-module.exports = _construct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 16 */
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
-}
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 17 */
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  try {
-    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-  } catch (t) {}
-  return (module.exports = _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-    return !!t;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports)();
-}
-module.exports = _isNativeReflectConstruct, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 18 */
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ 19);
-var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 20);
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
-var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ 21);
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 19 */
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return arrayLikeToArray(arr);
-}
-module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-/* 20 */
+/***/ 20:
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
   \****************************************************************/
@@ -2792,7 +3648,8 @@ function _iterableToArray(iter) {
 module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 21 */
+
+/***/ 21:
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
   \******************************************************************/
@@ -2805,7 +3662,8 @@ function _nonIterableSpread() {
 module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 22 */
+
+/***/ 22:
 /*!*************************************************************!*\
   !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
   \*************************************************************/
@@ -3341,7 +4199,8 @@ function resolveLocaleChain(locale) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 23 */
+
+/***/ 23:
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/classCallCheck.js ***!
   \***************************************************************/
@@ -3356,7 +4215,8 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 24 */
+
+/***/ 24:
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/createClass.js ***!
   \************************************************************/
@@ -3384,7 +4244,8 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 25 */
+
+/***/ 25:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
   \******************************************************************************************/
@@ -8923,7 +9784,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8944,14 +9805,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9047,7 +9908,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"ruoyi-app","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9465,22 +10326,50 @@ internalMixin(Vue);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 26 */
+
+/***/ 26:
 /*!***********************************************!*\
   !*** D:/wokespace/cloud/ruoyi-app/pages.json ***!
   \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-pages-loader/lib/index.js):\nTypeError: Cannot read properties of undefined (reading 'renderer')\n    at weixinSkyline (C:\\Users\\JS\\Desktop\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-pages-loader\\lib\\platforms\\mp.js:217:17)\n    at C:\\Users\\JS\\Desktop\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-pages-loader\\lib\\platforms\\mp.js:371:33\n    at C:\\Users\\JS\\Desktop\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-pages-loader\\lib\\platforms\\mp-weixin\\index.js:5:23\n    at Object.<anonymous> (C:\\Users\\JS\\Desktop\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-pages-loader\\lib\\index-new.js:188:71)\n    at Object.<anonymous> (C:\\Users\\JS\\Desktop\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-pages-loader\\lib\\index.js:58:35)");
+
 
 /***/ }),
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */
+
+/***/ 3:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 32:
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -9611,23 +10500,8 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */
-/*!******************************************************!*\
-  !*** D:/wokespace/cloud/ruoyi-app/assets/head.0.png ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/head.0.7eab71b2.png";
-
-/***/ }),
-/* 38 */,
-/* 39 */,
-/* 40 */
+/***/ 33:
 /*!*************************************************!*\
   !*** D:/wokespace/cloud/ruoyi-app/lib/utils.js ***!
   \*************************************************/
@@ -9642,8 +10516,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _def = _interopRequireDefault(__webpack_require__(/*! ./def.js */ 41));
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config.js */ 42));
+var _def = _interopRequireDefault(__webpack_require__(/*! ./def.js */ 34));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config.js */ 35));
 var DEFAULT_APPKEY = _config.default.APPKEY;
 var _default = {
   __page__: null,
@@ -10270,7 +11144,8 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
 /***/ }),
-/* 41 */
+
+/***/ 34:
 /*!***********************************************!*\
   !*** D:/wokespace/cloud/ruoyi-app/lib/def.js ***!
   \***********************************************/
@@ -10288,7 +11163,8 @@ var _default = {};
 exports.default = _default;
 
 /***/ }),
-/* 42 */
+
+/***/ 35:
 /*!**********************************************!*\
   !*** D:/wokespace/cloud/ruoyi-app/config.js ***!
   \**********************************************/
@@ -10317,54 +11193,160 @@ var _default = {
     "titleColor": "#000000",
     "tabarBgColor": "#ffffff",
     "tabarColor": "#000000",
-    "tabarSelColor": "#E33731"
+    "tabarSelColor": "#096dd9",
+    "backgroundColor": "",
+    "warnColor": "",
+    "errorColor": ""
   },
   "tabar": [{
     "pagePath": "pages/im/index",
-    "text": "通信",
-    "iconfont": "icon-recordfill",
+    "text": "首页",
+    "iconfont": "icon-community",
     "iconPath": "static/tabar/0.png",
     "selectedIconPath": "static/tabar/0.on.png"
+  }, {
+    "pagePath": "pages/comunication/index",
+    "text": "任务",
+    "iconfont": "icon-text",
+    "iconPath": "static/tabar/1.png",
+    "selectedIconPath": "static/tabar/1.on.png"
   }, {
     "pagePath": "pages/work/index",
     "text": "工作台",
     "iconfont": "icon-apps",
-    "iconPath": "static/tabar/1.png",
-    "selectedIconPath": "static/tabar/1.on.png"
-  }, {
-    "pagePath": "pages/comunication/index",
-    "text": "通讯录",
-    "iconfont": "icon-text",
     "iconPath": "static/tabar/2.png",
     "selectedIconPath": "static/tabar/2.on.png"
+  }, {
+    "pagePath": "pages/datatime/index",
+    "text": "日历",
+    "iconfont": "icon-rili2",
+    "iconPath": "static/tabar/3.png",
+    "selectedIconPath": "static/tabar/3.on.png"
   }, {
     "pagePath": "pages/my/index",
     "text": "我的",
     "iconfont": "icon-my",
-    "iconPath": "static/tabar/3.png",
-    "selectedIconPath": "static/tabar/3.on.png"
+    "iconPath": "static/tabar/4.png",
+    "selectedIconPath": "static/tabar/4.on.png"
   }]
 };
 exports.default = _default;
 
 /***/ }),
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */
+
+/***/ 36:
+/*!*************************************************************!*\
+  !*** D:/wokespace/cloud/ruoyi-app/uni.promisify.adaptor.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(uni) {var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
+uni.addInterceptor({
+  returnValue: function returnValue(res) {
+    if (!(!!res && (_typeof(res) === "object" || typeof res === "function") && typeof res.then === "function")) {
+      return res;
+    }
+    return new Promise(function (resolve, reject) {
+      res.then(function (res) {
+        return res[0] ? reject(res[0]) : resolve(res[1]);
+      });
+    });
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+/***/ 4:
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 5:
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 6);
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ 7);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 10);
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 6:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 7:
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(r, l) {
+  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+  if (null != t) {
+    var e,
+      n,
+      i,
+      u,
+      a = [],
+      f = !0,
+      o = !1;
+    try {
+      if (i = (t = t.call(r)).next, 0 === l) {
+        if (Object(t) !== t) return;
+        f = !1;
+      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0) {
+        ;
+      }
+    } catch (r) {
+      o = !0, n = r;
+    } finally {
+      try {
+        if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
+      } finally {
+        if (o) throw n;
+      }
+    }
+    return a;
+  }
+}
+module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 73:
 /*!*****************************************************!*\
   !*** D:/wokespace/cloud/ruoyi-app/assets/empty.png ***!
   \*****************************************************/
@@ -10373,6 +11355,45 @@ exports.default = _default;
 
 module.exports = "data:image/png;base64,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"
 
+/***/ }),
+
+/***/ 8:
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 9:
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+  return arr2;
+}
+module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
 /***/ })
-]]);
+
+}]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

@@ -85,7 +85,7 @@ export default{
 	name:"place",
 	title:"省市地区",
 	created:function(){//系统初始化
-		utils._init(this,{});
+		utils._init(this,{},true);
 		this.getPlace();
 		if(this.vm.platform=="mp-weixin" && this.$parent && this.$parent.onChooseAddress){
 			this.haveChoose=true;

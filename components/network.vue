@@ -30,7 +30,7 @@ export default{
 	},
 	name:"network",
 	created:function(){
-		utils._init(this,{});
+		utils._init(this,{},true);
 		if(this.action){
 			utils.request({
 				url:this.action,

@@ -1,9 +1,16 @@
 {
     "pages":[
+		{
+		    "path":"pages/datatime/index",
+		    "style":{
+		        "navigationBarTitleText":"日历",
+		        "navigationStyle":"custom"
+		    }
+		},
         {
-            "path":"pages/im/index",
+            "path":"pages/login/login",
             "style":{
-                "navigationBarTitleText":"消息",
+                "navigationBarTitleText":"登录",
                 "navigationStyle":"custom",
                 "backgroundColor":"#ffffff"
             }
@@ -18,12 +25,27 @@
         {
             "path":"pages/im/chat",
             "style":{
-                "navigationBarTitleText":"聊天",
+                "navigationBarTitleText":"新微数字",
                 "navigationStyle":"custom"
             }
         },
         {
+            "path":"pages/im/index",
+            "style":{
+                "navigationBarTitleText":"消息",
+                "navigationStyle":"custom",
+                "backgroundColor":"#ffffff"
+            }
+        },
+        {
             "path":"pages/my/index",
+            "style":{
+                "navigationBarTitleText":"我的",
+                "navigationStyle":"custom"
+            }
+        },
+        {
+            "path":"pages/my/setting",
             "style":{
                 "navigationBarTitleText":"我的",
                 "navigationStyle":"custom"
@@ -48,31 +70,37 @@
         "borderStyle":"black",
         "position":"bottom",
         "color":"#999999",
-        "selectedColor":"#6282FF",
+        "selectedColor":"#096dd9",
         "list":[
             {
                 "pagePath":"pages/im/index",
-                "text":"通信",
+                "text":"首页",
                 "iconPath":"static/tabar/0.png",
                 "selectedIconPath":"static/tabar/0.on.png"
             },
             {
-                "pagePath":"pages/work/index",
-                "text":"工作台",
+                "pagePath":"pages/comunication/index",
+                "text":"任务",
                 "iconPath":"static/tabar/1.png",
                 "selectedIconPath":"static/tabar/1.on.png"
             },
             {
-                "pagePath":"pages/comunication/index",
-                "text":"通讯录",
+                "pagePath":"pages/work/index",
+                "text":"工作台",
                 "iconPath":"static/tabar/2.png",
                 "selectedIconPath":"static/tabar/2.on.png"
             },
             {
-                "pagePath":"pages/my/index",
-                "text":"我的",
+                "pagePath":"pages/datatime/index",
+                "text":"日历",
                 "iconPath":"static/tabar/3.png",
                 "selectedIconPath":"static/tabar/3.on.png"
+            },
+            {
+                "pagePath":"pages/my/setting",
+                "text":"我的",
+                "iconPath":"static/tabar/4.png",
+                "selectedIconPath":"static/tabar/4.on.png"
             }
         ]
     }

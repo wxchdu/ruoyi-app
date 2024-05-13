@@ -14,12 +14,103 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/inte
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 __webpack_require__(/*! uni-pages */ 26);
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 27));
+var _utils = _interopRequireDefault(__webpack_require__(/*! ./lib/utils.js */ 33));
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
+__webpack_require__(/*! ./uni.promisify.adaptor */ 36);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // @ts-ignore
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
-//import './uni.promisify.adaptor'
+var status = function status() {
+  __webpack_require__.e(/*! require.ensure | components/status */ "components/status").then((function () {
+    return resolve(__webpack_require__(/*! ./components/status.vue */ 90));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('status', status);
+var combox = function combox() {
+  __webpack_require__.e(/*! require.ensure | components/combox */ "components/combox").then((function () {
+    return resolve(__webpack_require__(/*! ./components/combox.vue */ 95));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('combox', combox);
+var place = function place() {
+  __webpack_require__.e(/*! require.ensure | components/place */ "components/place").then((function () {
+    return resolve(__webpack_require__(/*! ./components/place.vue */ 100));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('place', place);
+var datetime = function datetime() {
+  __webpack_require__.e(/*! require.ensure | components/datetime */ "components/datetime").then((function () {
+    return resolve(__webpack_require__(/*! ./components/datetime.vue */ 105));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('datetime', datetime);
+var upload = function upload() {
+  __webpack_require__.e(/*! require.ensure | components/upload */ "components/upload").then((function () {
+    return resolve(__webpack_require__(/*! ./components/upload.vue */ 110));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('upload', upload);
+var score = function score() {
+  __webpack_require__.e(/*! require.ensure | components/score */ "components/score").then((function () {
+    return resolve(__webpack_require__(/*! ./components/score.vue */ 115));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('score', score);
+var toggle = function toggle() {
+  __webpack_require__.e(/*! require.ensure | components/toggle */ "components/toggle").then((function () {
+    return resolve(__webpack_require__(/*! ./components/toggle.vue */ 120));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('toggle', toggle);
+var popup = function popup() {
+  __webpack_require__.e(/*! require.ensure | components/popup */ "components/popup").then((function () {
+    return resolve(__webpack_require__(/*! ./components/popup.vue */ 125));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('popup', popup);
+var coupon = function coupon() {
+  __webpack_require__.e(/*! require.ensure | components/coupon */ "components/coupon").then((function () {
+    return resolve(__webpack_require__(/*! ./components/coupon.vue */ 130));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('coupon', coupon);
+var network = function network() {
+  __webpack_require__.e(/*! require.ensure | components/network */ "components/network").then((function () {
+    return resolve(__webpack_require__(/*! ./components/network.vue */ 135));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('network', network);
+var slither = function slither() {
+  __webpack_require__.e(/*! require.ensure | components/slither */ "components/slither").then((function () {
+    return resolve(__webpack_require__(/*! ./components/slither.vue */ 140));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('slither', slither);
+var i18n = function i18n() {
+  __webpack_require__.e(/*! require.ensure | components/i18n */ "components/i18n").then((function () {
+    return resolve(__webpack_require__(/*! ./components/i18n.vue */ 145));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('i18n', i18n);
+var dynamic = function dynamic() {
+  __webpack_require__.e(/*! require.ensure | components/dynamic */ "components/dynamic").then((function () {
+    return resolve(__webpack_require__(/*! ./components/dynamic.vue */ 150));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('dynamic', dynamic);
+_vue.default.prototype.$session = {
+  version: 0
+};
+_vue.default.prototype.setSession = function (session) {
+  for (var o in session || {}) {
+    _vue.default.prototype.$session[o] = session[o];
+  }
+  console.log("#####", session, _vue.default.prototype.$session);
+};
+_vue.default.prototype.resetting = function (callback) {
+  callback();
+};
 _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';
 var app = new _vue.default(_objectSpread({}, _App.default));

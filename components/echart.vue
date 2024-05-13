@@ -31,7 +31,7 @@ export default{
 	watch:{
 	},
 	created:function(options){
-		utils._init(this,{});
+		utils._init(this,{},true);
     this.$nextTick(()=>{
         this.initChart();
     });
