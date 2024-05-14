@@ -177,6 +177,8 @@ export default{
 		}
 	},
 	onLoad:function(options){
+		console.log("aaa".at(0));
+		
 		utils._init(this,options);
 	},
 	methods:{
@@ -203,6 +205,7 @@ export default{
 					options:this.__options__
 				},
 				success:(protocol)=>{
+					
 					if(protocol.success){
 						resolve(protocol.data)
 					}
