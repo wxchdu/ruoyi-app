@@ -129,7 +129,7 @@ export default{
 							path:res.tempFilePaths[o],
 							success:(protocol)=>{
 								//返回图片地址为：protocol.data.url
-								this.onUploaded(protocol.data.url,index);
+								this.onUploaded(protocol.url,index);
 							}
 						});
 					}
@@ -142,7 +142,7 @@ export default{
 			var formData = new FormData();  // 创建form对象
 			formData.append('file', imgFile);  // 通过append向form对象添加数据
 			$.ajax({
-			    url: config.apiHost + ("/api/lib/upload.vo"), //请求的接口地址
+			    url: this.action , //请求的接口地址
 			    type: 'POST',
 			    cache: false, //上传文件不需要缓存
 			    data: formData,

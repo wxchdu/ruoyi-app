@@ -40,6 +40,7 @@ Vue.component('i18n',i18n)
 import dynamic from './components/dynamic.vue'
 Vue.component('dynamic',dynamic)
 
+
 Vue.prototype.$session = {
 	version:0
 };

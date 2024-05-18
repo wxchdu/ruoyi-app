@@ -201,7 +201,8 @@ export default {
                 success (res) {
 					console.log(res);
                     if(res.data.code == 200){
-                        const token = res.token;
+						uni.setStorageSync('token', res.data.token);
+						console.log(uni.getStorageSync('token'))
 						const chatUserName = "admin"
 						uni.switchTab({
 						  url: "../im/index",

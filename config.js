@@ -1,5 +1,5 @@
 export default {
-    "apiHost": "http://localhost:8080",
+    "apiHost": "http://digit.xinvay.com/prod-api/",
     "loginPage": "/pages/author/login",
     "window": {
     },

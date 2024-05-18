@@ -23,79 +23,79 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 var status = function status() {
   __webpack_require__.e(/*! require.ensure | components/status */ "components/status").then((function () {
-    return resolve(__webpack_require__(/*! ./components/status.vue */ 92));
+    return resolve(__webpack_require__(/*! ./components/status.vue */ 95));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('status', status);
 var combox = function combox() {
   __webpack_require__.e(/*! require.ensure | components/combox */ "components/combox").then((function () {
-    return resolve(__webpack_require__(/*! ./components/combox.vue */ 97));
+    return resolve(__webpack_require__(/*! ./components/combox.vue */ 100));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('combox', combox);
 var place = function place() {
   __webpack_require__.e(/*! require.ensure | components/place */ "components/place").then((function () {
-    return resolve(__webpack_require__(/*! ./components/place.vue */ 102));
+    return resolve(__webpack_require__(/*! ./components/place.vue */ 105));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('place', place);
 var datetime = function datetime() {
   __webpack_require__.e(/*! require.ensure | components/datetime */ "components/datetime").then((function () {
-    return resolve(__webpack_require__(/*! ./components/datetime.vue */ 107));
+    return resolve(__webpack_require__(/*! ./components/datetime.vue */ 110));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('datetime', datetime);
 var upload = function upload() {
-  __webpack_require__.e(/*! require.ensure | components/upload */ "components/upload").then((function () {
-    return resolve(__webpack_require__(/*! ./components/upload.vue */ 112));
+  Promise.all(/*! require.ensure | components/upload */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/upload")]).then((function () {
+    return resolve(__webpack_require__(/*! ./components/upload.vue */ 115));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('upload', upload);
 var score = function score() {
   __webpack_require__.e(/*! require.ensure | components/score */ "components/score").then((function () {
-    return resolve(__webpack_require__(/*! ./components/score.vue */ 117));
+    return resolve(__webpack_require__(/*! ./components/score.vue */ 120));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('score', score);
 var toggle = function toggle() {
   __webpack_require__.e(/*! require.ensure | components/toggle */ "components/toggle").then((function () {
-    return resolve(__webpack_require__(/*! ./components/toggle.vue */ 122));
+    return resolve(__webpack_require__(/*! ./components/toggle.vue */ 125));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('toggle', toggle);
 var popup = function popup() {
   __webpack_require__.e(/*! require.ensure | components/popup */ "components/popup").then((function () {
-    return resolve(__webpack_require__(/*! ./components/popup.vue */ 127));
+    return resolve(__webpack_require__(/*! ./components/popup.vue */ 130));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('popup', popup);
 var coupon = function coupon() {
   __webpack_require__.e(/*! require.ensure | components/coupon */ "components/coupon").then((function () {
-    return resolve(__webpack_require__(/*! ./components/coupon.vue */ 132));
+    return resolve(__webpack_require__(/*! ./components/coupon.vue */ 135));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('coupon', coupon);
 var network = function network() {
   __webpack_require__.e(/*! require.ensure | components/network */ "components/network").then((function () {
-    return resolve(__webpack_require__(/*! ./components/network.vue */ 137));
+    return resolve(__webpack_require__(/*! ./components/network.vue */ 140));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('network', network);
 var slither = function slither() {
   __webpack_require__.e(/*! require.ensure | components/slither */ "components/slither").then((function () {
-    return resolve(__webpack_require__(/*! ./components/slither.vue */ 142));
+    return resolve(__webpack_require__(/*! ./components/slither.vue */ 145));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('slither', slither);
 var i18n = function i18n() {
   __webpack_require__.e(/*! require.ensure | components/i18n */ "components/i18n").then((function () {
-    return resolve(__webpack_require__(/*! ./components/i18n.vue */ 147));
+    return resolve(__webpack_require__(/*! ./components/i18n.vue */ 150));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('i18n', i18n);
 var dynamic = function dynamic() {
   __webpack_require__.e(/*! require.ensure | components/dynamic */ "components/dynamic").then((function () {
-    return resolve(__webpack_require__(/*! ./components/dynamic.vue */ 152));
+    return resolve(__webpack_require__(/*! ./components/dynamic.vue */ 155));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('dynamic', dynamic);
